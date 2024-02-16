@@ -1,4 +1,5 @@
 import data.structures.MyLinkedList;
+import data.structures.MyQueue;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +23,16 @@ public class Main {
 
         listy.searchList(1);
         listy.searchList(-1);
+
+
+        MyQueue<Integer> queuey = new MyQueue<>();
+
+        queuey.enqueue(1);
+        queuey.enqueue(2);
+        queuey.enqueue(3);
+
+        queuey.dequeue();
+
+        queuey.peek();
     }
 }
